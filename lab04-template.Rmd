@@ -1,0 +1,73 @@
+---
+title: "Lab 04"
+subtitle: "due [date] 11:59 PM "
+author: ""
+editor_options: 
+  chunk_output_type: console
+output:
+  pdf_document: default
+---
+
+```{r load-packages, message = FALSE, warning = FALSE}
+library(tidyverse)
+library(sf)
+``` 
+
+```{r load-data, message = FALSE}
+states <- st_read("cb_2020_us_state_20m.shp", quiet = TRUE)
+census <- read_csv("census_2020_lower48.csv")
+```
+
+# Exercise 1
+
+Contract.
+
+# Exercise 2
+```{r ex-2}
+```
+
+Use the proper join to create the `census_data` data set and please remember to name your chunk.
+
+# Exercise 3
+
+```{r us-plot-1, eval = FALSE}
+ggplot(census_data) +
+  geom_sf(aes(fill = ______)) + 
+  # please remember to give your plot a title and to label the legend
+  # you may also want to give your plot a theme here
+```
+
+# Exercise 4
+
+```{r ex-4}
+```
+
+# Exercise 5
+
+```{r us-plot-2, eval = FALSE}
+ggplot(census_data) +
+  geom_sf(aes(fill = ______)) + 
+  # adjust the color here and remember to give your plot a midpoint
+  # please remember to give your plot a title and to label the legend
+  # you may also want to give your plot a theme here
+```
+
+# Exercise 6
+
+```{r us-plot-3, eval = FALSE}
+ggplot(census_data) +
+  geom_sf(aes(fill = ______)) + 
+  # adjust the color here and remember to give your plot a midpoint
+  # please remember to give your plot a title and to label the legend
+  # you may also want to give your plot a theme here
+```
+
+# Exercise 7
+
+```{r us-plot-4, eval = FALSE}
+ggplot(census_data) +
+  geom_sf(aes(fill = ______)) + 
+  # adjust the color here
+  # please remember to give your plot a title and to label the legend
+  # you may also want to give your plot a theme here
+```
